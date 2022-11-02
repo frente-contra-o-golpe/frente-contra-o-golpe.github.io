@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lista de grupos da FRENTE</title>
+    <!-- CSS only -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+      crossorigin="anonymous"
+    />
+    <style>
+      .list-group {
+        max-width: 460px;
+        margin: 4rem auto;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <header
+        class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom"
+      >
+        <a
+          href="/"
+          class="d-flex align-items-end mb-3 mb-md-0 me-md-auto text-dark text-decoration-none"
+        >
+          <span class="fs-4">FRENTE</span>
+          <span class="ms-1">Frente Nacional de Enfrentamento ao Golpe</span>
+        </a>
+
+        <ul class="nav nav-pills">
+          <li class="nav-item">
+            <a href="#" class="nav-link active" aria-current="page"
+              >Lista de grupos</a
+            >
+          </li>
+          <li class="nav-item">
+            <a href="/criar.html" class="nav-link">Adicionar grupo</a>
+          </li>
+        </ul>
+      </header>
+    </div>
+    <main>
+      <article class="container">
+        A FRENTE convoca a população pra estar de prontidão nesse momento, entre
+        no grupo da sua cidade (ou crie um <a href="/criar.html">aqui</a> caso
+        ainda não exista)
+      </article>
+
+      <div class="list-group w-auto" id="lista">
+        <div
+          class="list-group-item list-group-item-action gap-3 py-3 text-center"
+        >
+          <h6 class="mb-0">Lista de grupos</h6>
+        </div>
+      </div>
+    </main>
+    <script src="./index.js" type="module"></script>
+  </body>
+</html>

@@ -1,0 +1,13 @@
+{
+  "dependencies": {
+    "gun": "^0.2020.1238",
+    "moment": "^2.29.4",
+    "reticle": "^0.3.0",
+    "standard": "^17.0.0",
+    "vercel": "^28.4.14"
+  },
+  "devDependencies": {
+    "@types/gun": "^0.9.3",
+    "buffer": "^6.0.3"
+  }
+}
