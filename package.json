@@ -3,11 +3,20 @@
     "gun": "^0.2020.1238",
     "moment": "^2.29.4",
     "reticle": "^0.3.0",
-    "standard": "^17.0.0",
-    "vercel": "^28.4.14"
+    "standard": "^17.0.0"
+  },
+  "scripts": {
+    "start": "parcel ./src/index.html",
+    "prebuild-dev": "shx rm -rf dist/*",
+    "build-dev": "parcel build ./index.html ./criado-por --public-url ./",
+    "prebuild": "shx rm -rf dist/*",
+    "build": "parcel build ./index.html ./criado-por --public-url ./",
+    "push-gh-pages": "push-dir --dir=dist --branch=gh-pages --cleanup --verbose"
   },
   "devDependencies": {
     "@types/gun": "^0.9.3",
-    "buffer": "^6.0.3"
+    "buffer": "^6.0.3",
+    "push-dir": "^0.4.1",
+    "shx": "^0.3.2"
   }
 }
